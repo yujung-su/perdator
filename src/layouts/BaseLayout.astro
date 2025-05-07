@@ -1,0 +1,49 @@
+---
+import Navigation from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import "../styles/global.css";
+const { pageTitle } = Astro.props;
+import { Image } from 'astro:assets';
+import localBirdImage from '/src/images/card-front2.png';
+---
+
+<!-- Below is your "component template." It's just HTML, but with
+    some magic sprinkled in to help you build great templates. -->
+	<html lang="en">
+		<head>
+		  <meta charset="utf-8" />
+		  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+		  <meta name="viewport" content="width=device-width" />
+		  <meta name="generator" content={Astro.generator} >
+		  <title>{pageTitle}</title>
+		</head>
+		<body>
+			<div class="overflow-x-auto">
+         <!-- slideshow -->
+			</div>
+		  <!-- debug -->
+
+		    <script type="module">
+              import "/predator/src/scripts/main.js";
+		    </script>
+		    <div class="box-border border-4 pt-12 h-86 md:h-64 min-w-64">
+			<canvas id="c" ></canvas>
+		    </div>
+		    <Navigation client:load />
+
+		  <!-- <div class="bg-[url(/predator/src/images/card-front2.png)] bg-center bg-repeat"></div> -->
+		  <Image src={localBirdImage} alt="A bird sitting on a nest of eggs." />
+		  
+          <!-- debug -->
+          <!-- <script type="module" src="../scripts/main.js"></script> -->
+
+		  <h1 class="pl-4 text-shadow-lg/50 text-shadow-teal-500">{pageTitle}</h1>
+		  <div class="border-l-4 border-indigo-600 m-4">
+			<slot/>
+		  </div>
+		  <Footer />
+		  <!-- <script>
+            import "../scripts/menu.js";
+		  </script> -->
+		</body>
+	  </html>

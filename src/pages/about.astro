@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EXPERIENCE from '../components/Experience.astro';
+// import "../styles/global.css";
+const pageTitle = "About Me";
+const identity = {
+  firstName: "YuJung Su",
+  age: "30",
+  country: "Taiwan",
+  occupation: "Freelancer",
+  hobbies: ["Cat", "Books", "Drawing", "Tennis"],
+};
+const skills = ["HTML", "CSS", "Python","JavaScript", "Astro", "Houdini","Blender","Krita","Reaper","Live2d"];
+// const happy = true;
+// const finished = true;
+// const goal = 3;
+// const skillColor = "navy";
+
+---
+<BaseLayout pageTitle={pageTitle}>
+  <div class="m-4">
+    <!-- <h1>About me</h1> -->
+
+    <ul>
+      <li>My name is {identity.firstName}. I am {identity.age} years old.</li>
+      <li>I live in {identity.country} and I work currently as a {identity.occupation}. I am looking for a
+      job as a 3D VFX artist. </li>
+      {identity.hobbies.length >= 2 &&
+        <li>My hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+      }
+    </ul>
+    <p>My skills are:</p>
+    <div class="flex flex-row flex-wrap">
+      {skills.map((skill) => <div class="text-white bg-blue-500 rounded-sm p-2 m-2 text-center border-2 border-solid shadow-md shadow-neutral-50">{skill}</div>)}
+    </div>
+
+    <h2>Education</h2>
+
+    <EXPERIENCE/>
+
+
+    <!-- {happy && <p>I am happy to be learning Astro!</p>} class="col-span-2 md:col-span-6
+
+    {finished && <p>I finished this tutorial!</p>}
+    
+    {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>} -->
+  </div>
+  </BaseLayout>

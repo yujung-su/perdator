@@ -1,0 +1,66 @@
+---
+// import ThemeIcon from './ThemeIcon.astro';
+import "../styles/global.css";
+// import "../scripts/menu.js";
+import { Image } from 'astro:assets';
+import localBirdImage from '/src/images/logo-white512.png';
+---
+<!-- <div class="nav-links">
+  <a href="/predator/">Home</a>
+  <a href="/predator/about/">About</a>
+  <a href="/predator/blog/">Blog</a>
+  <a href="/predator/tags/">Tags</a>
+  <ThemeIcon />
+</div> -->
+
+<!-- <div class="fixed navbar">
+	<h1 class="navbar_logo"><a href="#">獵人劈視覺效果工作室</a></h1>
+    <ul class="navbar_inks">
+        <li><a href="/predator/">Home</a></li>
+        <li><a href="/predator/about/">About</a></li>
+        <li><a href="/predator/blog/">Blog</a></li>
+        <li><a href="/predator/tags/">Tags</a></li>
+        <li><a href="/predator/blog/">Contact</a></li>
+    </ul>
+  </div>
+</div> -->
+
+
+<nav class="flex items-center justify-between flex-wrap p-2 ml-2">
+  <div class="flex items-center flex-shrink-0 text-white mr-6">
+    <Image src={localBirdImage} alt="logo" class="size-[50px]"/>
+    <span class="font-semibold text-2xl tracking-tight">獵人劈視覺效果工作室</span>
+  </div>
+  <!-- <div class="block sm:hidden">
+    <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+    </button>
+  </div> -->
+  <div class="w-full block flex-grow sm:items-center sm:flex sm:w-auto">
+    <div class="text-base sm:flex-grow">
+      <button class="hover:bg-sky-700 hover:text-white duration-150 mr-4 block sm:inline-block p-2 m-2 rounded-md">
+        <a href="/predator/" class="mt-4  sm:mt-0 text-teal-200 hover:text-white">
+        Home
+        </a>
+      </button>
+      <button class="hover:bg-sky-700 hover:text-white duration-150 mr-4 block sm:inline-block p-2 m-2  rounded-md">
+      <a href="/predator/about/" class="mt-4 sm:inline-block sm:mt-0 text-teal-200">
+        Skills
+      </a>
+      </button>
+      <button class="hover:bg-sky-700 hover:text-white duration-150 mr-4 block sm:inline-block p-2 m-2 rounded-md">
+      <a href="/predator/blog/" class="mt-4 sm:inline-block sm:mt-0 text-teal-200">
+        Portfolio
+      </a>
+      </button>
+      <button class="hover:bg-sky-700 hover:text-white duration-150 mr-4 block sm:inline-block p-2 m-2 rounded-md">
+      <a href="/predator/tags/" class="mt-4 sm:inline-block sm:mt-0 text-teal-200">
+        Tags
+      </a>
+      </button>
+    </div>
+    <!-- <div>
+      <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 sm:mt-0">Download</a>
+    </div> -->
+  </div>
+</nav>
