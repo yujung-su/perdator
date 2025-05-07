@@ -5,6 +5,7 @@ import "../styles/global.css";
 const { pageTitle } = Astro.props;
 import { Image } from 'astro:assets';
 import localBirdImage from '/src/images/card-front2.png';
+
 ---
 
 <!-- Below is your "component template." It's just HTML, but with
@@ -22,10 +23,10 @@ import localBirdImage from '/src/images/card-front2.png';
          <!-- slideshow -->
 			</div>
 
-
-		    <script type="module">
+			<script src="../scripts/main.js"></script>
+		    <!-- <script type="module">
               import "/predator/src/scripts/main.js";
-		    </script>
+		    </script> -->
 					  <!-- 3D component here -->
 		    <div class="box-border border-2 pt-12 h-64 md:h-64 min-w-64">
 			<canvas id="c" ></canvas>
