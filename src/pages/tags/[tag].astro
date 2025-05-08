@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import BlogPost from '../../components/BlogPost.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import BlogPost from '@components/BlogPost.astro';
 
 export async function getStaticPaths() {
   // const allPosts = Object.values(import.meta.glob('../posts/*.md', { eager: true }));
@@ -25,6 +25,6 @@ const { posts } = Astro.props;
   <p>Posts tagged with {tag}</p>
   <ul>
     <!-- {posts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title}/>)} -->
-    { posts.map((post) => <BlogPost url={`/posts/${post.id}/`} title={post.data.title} />) }
+    { posts.map((post) => <BlogPost url={`/predator/posts/${post.id}/`} title={post.data.title} />) }
   </ul>
 </BaseLayout>

@@ -1,7 +1,7 @@
 ---
 // import ThemeIcon from './ThemeIcon.astro';
-import "../styles/global.css";
-// import "../scripts/menu.js";
+import "@styles/global.css";
+// import "@scripts/menu.js";
 import { Image } from 'astro:assets';
 import localBirdImage from '/src/images/logo-white512.png';
 ---
@@ -26,41 +26,45 @@ import localBirdImage from '/src/images/logo-white512.png';
 </div> -->
 
 
-<nav class="flex items-center justify-between flex-wrap p-2 ml-2">
-  <div class="flex items-center text-white w-full lg:w-80">
-    <Image src={localBirdImage} alt="logo" class="size-[50px]"/>
-    <span class="font-semibold text-2xl tracking-widest text-center w-full lg:w-80 ">獵人劈視覺效果工作室</span>
+<nav class="bg-gray-900 w-full fixed top-0 flex items-center justify-between flex-wrap p-2 shadow-lg shadow-cyan-500/50 transition duration-300 hover:brightness-200 reacthover">
+  <div class="flex items-center text-white w-full md:w-80">
+    <!-- <a>獵人劈視覺效果工作室</a> -->
+    <Image src={localBirdImage} alt="logo" class="size-[50px] "/>
+    <span class="font-medium text-2xl tracking-widest text-center w-full md:w-80 "><a>獵人劈視覺效果工作室</a></span>
   </div>
-  <!-- <div class="block lg:hidden">
+  <!-- <div class="block md:hidden">
     <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
       <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
     </button>
   </div> -->
-  <div class="w-full block flex-grow lg:items-center lg:w-auto">
-    <div class="text-base lg:flex-grow">
-      <button class="hover:bg-sky-700 duration-150 block lg:inline-block p-2 space-x-px rounded-md w-full lg:w-16">
-        <a href="/predator/" class="mt-4 lg:mt-0 text-teal-200">
+  <div class="w-full flex-grow md:items-center md:w-auto nav-links">
+    <div class="text-base md:flex-grow">
+      <button class="hover:bg-sky-700 duration-150 md:inline-block p-2 space-x-px rounded-md w-full md:w-16">
+        <a href="/predator/" class="mt-4 md:mt-0 text-teal-200">
         Home
         </a>
       </button>
-      <button class="hover:bg-sky-700 duration-150 block lg:inline-block p-2 space-x-px rounded-md w-full lg:w-16">
-      <a href="/predator/about/" class="mt-4 lg:inline-block lg:mt-0 text-teal-200">
+      <button class="hover:bg-sky-700 duration-150 md:inline-block p-2 space-x-px rounded-md w-full md:w-16">
+      <a href="/predator/about/" class="mt-4 md:inline-block md:mt-0 text-teal-200">
         Skills
       </a>
       </button>
-      <button class="hover:bg-sky-700 duration-150 block lg:inline-block p-2 space-x-px rounded-md w-full lg:w-24">
-      <a href="/predator/blog/" class="mt-4 lg:inline-block lg:mt-0 text-teal-200">
+      <button class="hover:bg-sky-700 duration-150 md:inline-block p-2 space-x-px rounded-md w-full md:w-24">
+      <a href="/predator/blog/" class="mt-4 md:inline-block md:mt-0 text-teal-200">
         Portfolio
       </a>
       </button>
-      <button class="hover:bg-sky-700 duration-150 block lg:inline-block p-2 space-x-px rounded-md w-full lg:w-16">
-      <a href="/predator/tags/" class="mt-4 lg:inline-block lg:mt-0 text-teal-200">
+      <button class="hover:bg-sky-700 duration-150 md:inline-block p-2 space-x-px rounded-md w-full md:w-16">
+      <a href="/predator/tags/" class="mt-4 md:inline-block md:mt-0 text-teal-200">
         Tags
       </a>
       </button>
     </div>
     <!-- <div>
-      <a href="#" class="inline-block text-lg px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
+      <a href="#" class="inline-block text-md px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 md:mt-0">Download</a>
     </div> -->
   </div>
 </nav>
+<script>
+  import "@scripts/menu.js";
+</script>

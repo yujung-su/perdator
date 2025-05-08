@@ -1,13 +1,20 @@
 ---
 const { platform, username } = Astro.props;
----
-<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+import "@styles/global.css";
 
-<style>
+---
+<div class="m-5" id = "footerbtn">
+    <a class='rounded-lg' href={`https://www.${platform}.com/${username}`}>{platform}</a>
+</div>
+<!-- <style>
   a {
     padding: 0.5rem 1rem;
+    margin: 1rem;
     color: white;
-    background-color: #4c1d95;
+    background-color: var(--color-nybtn);
     text-decoration: none;
   }
-</style>
+  a :hover {
+    background-color: var(--color-panel);
+  }
+</style> -->

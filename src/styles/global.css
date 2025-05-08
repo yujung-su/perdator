@@ -8,6 +8,8 @@
   --color-mytext: oklch(84.5% 0.143 164.978);
   --color-mybg: oklch(12.9% 0.042 264.695);
   --color-panel: oklch(37.3% 0.034 259.733);
+  --color-nybtn: oklch(52% 0.105 223.128);
+  --color-nybtn-active: oklch(68.5% 0.169 237.323)
 }
 
 html {
@@ -35,3 +37,74 @@ html {
   p{
     padding-left: 30px;
   }
+
+  /* ------------------Navigation Bars for small screen---------------- */
+
+  .nav-links {
+    /* width: 100%;
+    top: 5rem;
+    left: 48px;
+    background-color: #ff9776;
+    margin: 0; */
+    display: none;
+  }
+
+  
+.nav-links a {
+  /* display: block; */
+  /* text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase; */
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  /* background-color: #ff9776; */
+  color: white;
+}
+
+.expanded {
+  display: unset;
+}
+.reacthover{
+  /* background: none; */
+ z-index: 1;
+}
+
+.reacthover span:hover{
+  /* display: unset; */
+  /* background-color:white; */
+}
+@media screen and (min-width: 1024px) {
+  .nav-links {
+    display: block;
+    /* margin-left: 5em;
+    position: static;
+    width: auto;
+    background: none; */
+  }
+
+  .nav-links a {
+    display: inline-block;
+    /* padding: 15px 20px; */
+  }
+
+}
+
+
+/* ---------------------------footer-------------- */
+#footerbtn a {
+  padding: 0.5rem 1rem;
+  /* margin: 1rem; */
+
+  color: white;
+  background-color: var(--color-nybtn);
+  text-decoration: none;
+}
+#footerbtn a:hover {
+  background-color: var(--color-nybtn-active);
+}
+

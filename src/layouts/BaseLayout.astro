@@ -1,11 +1,11 @@
 ---
-import Navigation from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import "../styles/global.css";
+import Navigation from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import "@styles/global.css";
 const { pageTitle } = Astro.props;
 import { Image } from 'astro:assets';
-import localBirdImage from '/src/images/card-front2.png';
-
+import localBirdImage from '@images/card-front2.png';
+// import { getUser } from '../scripts/main.js';
 ---
 
 <!-- Below is your "component template." It's just HTML, but with
@@ -13,35 +13,40 @@ import localBirdImage from '/src/images/card-front2.png';
 	<html lang="en">
 		<head>
 		  <meta charset="utf-8" />
-		  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+		  <!-- <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" /> -->
+		  <link rel="icon" href="/src/images/logo-white512.png" />
 		  <meta name="viewport" content="width=device-width" />
 		  <meta name="generator" content={Astro.generator} >
 		  <title>{pageTitle}</title>
 		</head>
 		<body>
+					  <!-- ------------------- Navigation item ---------------- -->
+		    <Navigation />
+
 			<div class="overflow-x-auto">
-         <!-- slideshow -->
+         <!-- ---------------------slideshow--------------------- -->
 			</div>
 
 			<script src="../scripts/main.js"></script>
 		    <!-- <script type="module">
-              import "/predator/src/scripts/main.js";
+              import "/predator/src/scripts/main.js"; <script src="../scripts/entry.ts"></script>
 		    </script> -->
-					  <!-- 3D component here -->
-		    <div class="box-border border-2 pt-12 h-64 md:h-64 min-w-64">
-			<canvas id="c" ></canvas>
+					  <!-- ------------------3D component here------------------ -[32px]-->
+		    <div class="pt-0 h-64 md:h-64 min-w-64 mt-13">
+				<!-- <div class="w-full bg-white h-full"><div/> -->
+			<canvas id="container" class="w-full h-full"></canvas>
 		    </div>
-					  <!-- Navigation item -->
-		    <Navigation />
+
 
 		  <!-- <div class="bg-[url(/predator/src/images/card-front2.png)] bg-center bg-repeat"></div> -->
-		  <Image src={localBirdImage} alt="A bird sitting on a nest of eggs." />
+		   <!-- ------------------mayimage ------------------------- -->
+		  <!-- <Image src={localBirdImage} alt="A bird sitting on a nest of eggs." /> -->
 		  
           <!-- debug -->
           <!-- <script type="module" src="../scripts/main.js"></script> -->
 
 		  <h1 class="pl-4 text-shadow-lg/50 text-shadow-teal-500">{pageTitle}</h1>
-		  <div class="border-l-4 border-indigo-600 m-4">
+		  <div>
 			<slot/>
 		  </div>
 		  <Footer />

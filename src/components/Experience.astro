@@ -3,31 +3,44 @@ import ExperienceItem from './ExperienceItem.astro';
 
 const EXPERIENCE = [
   {
-    date: "2021 - Present",
-    title: "Software Development Coordinator",
-    company: "EFEELE.DEV",
+    date: "2017 - 2021",
+    title: "B.SC Physics",
+    company: "Göttingen University, Germany",
     description:
-      "I lead the planning, development, and implementation of software projects to optimize administrative processes and improve digital services. I manage and provide support for technology platforms, coordinating development teams to deliver efficient solutions.",
+      "Research Assistant in Max Planck Institute for dynamics and complex systems",
   },
   {
-    date: "2019 - 2020",
-    title: "Software Development Coordinator",
-    company: "EFEELE.DEV",
+    date: "2021 - 2024",
+    title: "M.SC Physics",
+    company: "Göttingen University, Germany",
     description:
-      "I lead the planning, development, and implementation of software projects to optimize administrative processes and improve digital services. I manage and provide support for technology platforms, coordinating development teams to deliver efficient solutions.",
+      "My studium focus is Biophysics. I have done lipid membrane simulation using Gromacs",
   },
-  
+  {
+  date: "2024 - 2025",
+    title: "Research Assistant",
+    company: "Academia Sinica, Taiwan",
+    description:
+      "I worked in a biological lab and learned how to grow stem cells and take confocal images. I also learned soft lithography and photolithogaphy technoqies.",
+  },
+  {
+  date: "2025-present",
+    title: "Freelancer",
+    company: "",
+    description:
+      "I started learning 3D programs like Blender and Houdini. I am also started making music and post in my youtube channel.",
+  },
 ];
 ---
 
-<div class="relative max-md:mt-0 mt-8" aria-label="Professional experience">
+<div class="relative max-md:mt-0 mt-4" aria-label="Professional experience">
   <ol class="relative mt-10">
     {
       EXPERIENCE.map((experience, index) => (
         <li class="">
           <article role="article" aria-labelledby={`experience-title-${index}`}>
             <div
-              class="flex flex-col gap-2  text-zinc-00 dark:text-zinc-300 md:col-span-3"
+              class="flex flex-col gap-2  text-zinc-300 dark:text-zinc-300 md:col-span-3"
               aria-describedby={`experience-title-${index}`}
             >
               <ExperienceItem {...experience} />
