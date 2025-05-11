@@ -12,7 +12,8 @@
       "@blog/*": ["src/blog/*"],
       "@images/*": ["src/images/*"],
       "@scripts/*": ["src/scripts/*"],
-      "@assets/*": ["src/assets/*"]
+      "@assets/*": ["src/assets/*"],
+      "@assets2/*": ["./src/assets/*"]
     }
   }
 }
