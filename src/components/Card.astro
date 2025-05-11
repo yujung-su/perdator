@@ -1,31 +1,32 @@
 ---
 // import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
-import Imageadv from './src/assets/fullhp.png';
-import Imagemid from './src/assets/midhp.png';
-import Imagebeg from './src/assets/lowhp.png';
+import Imageadv from 'src/assets/fullhp.png';
+import Imagemid from 'src/assets/midhp.png';
+import Imagebeg from 'src/assets/lowhp.png';
 
-import icon_html from './src/assets/html5.svg';
-import icon_css from './src/assets/css.svg';
-import icon_js from './src/assets/js.svg';
-import icon_twcss from './src/assets/twcss.png';
-import icon_git from './src/assets/git.svg';
-import icon_astro from './src/assets/astro2.svg';
-import icon_blenderr from './src/assets/blender.svg';
-import icon_houdini from './src/assets/houdini3D.png';
-import icon_krita from './src/assets/krita.png';
-import icon_python from './src/assets/python.svg';
-import icon_l2d from './src/assets/cubism.png';
-import icon_three from './src/assets/Threejs-logo.svg';
+// import icon_html from '/predator/public/html5.svg';
+// import icon_css from '/predator/public/css.svg';
+// import icon_js from '/predator/public/js.svg';
+// import icon_twcss from '/predator/public/twcss.png';
+// import icon_git from '/predator/public/git.svg';
+// import icon_astro from '/predator/public/astro2.svg';
+// import icon_blenderr from '/predator/public/blender.svg';
+// import icon_houdini from '/predator/public/houdini3D.png';
+// import icon_krita from '/predator/public/krita.png';
+// import icon_python from '/predator/public/python.svg';
+// import icon_l2d from '/predator/public/cubism.png';
+// import icon_three from '/predator/public/Threejs-logo.svg';
 
 
 ---
 <div class="flex flex-row flex-wrap shrink rounded-lg pl-4 pr-4">
   <div class= "text-white bg-purple-500 rounded-lg p-1 m-2 text-center border-2 border-solid shadow-md shadow-neutral-50">
-    <Image src={icon_html} alt="ladvanced" class="size-[40px]" title="html5" />
+    <!-- <Image src={icon_html} alt="ladvanced" class="size-[40px]" title="html5" /> -->
     <Image src={Imagemid} alt="ladvanced" class="size-[40px]" title="intermediate"/>
+    <img src="/predator/html5.svg" alt="ladvanced" class="size-[40px]" title="html5"/>
   </div>
-  <div class= "text-white bg-purple-500 rounded-lg p-1 m-2 text-center border-2 border-solid shadow-md shadow-neutral-50">
+  <!-- <div class= "text-white bg-purple-500 rounded-lg p-1 m-2 text-center border-2 border-solid shadow-md shadow-neutral-50">
     <Image src={icon_css} alt="ladvanced" class="size-[40px]" title="css" />
     <Image src={Imageadv} alt="ladvanced" class="size-[40px]" title="advanced"/>
   </div>
@@ -72,5 +73,5 @@ import icon_three from './src/assets/Threejs-logo.svg';
   <div class= "text-white bg-purple-500 rounded-lg p-1 m-2 text-center border-2 border-solid shadow-md shadow-neutral-50">
     <Image src={icon_three} alt="ladvanced" class="size-[40px]" title="Python" />
     <Image src={Imagemid} alt="ladvanced" class="size-[40px]" title="intermediate"/>
-  </div>
+  </div> -->
 </div>
