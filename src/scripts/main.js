@@ -25,7 +25,7 @@ const renderer = new THREE.WebGLRenderer({
 	stencil: false,
 	canvas: container
 })
-renderer.setPixelRatio( 3);
+renderer.setPixelRatio( 5);
 // renderer.setSize( canvas.innerWidth, canvas.innerHeight );
 // function resizeRendererToDisplaySize(renderer) {
 // 	const canvas = renderer.domElement;
