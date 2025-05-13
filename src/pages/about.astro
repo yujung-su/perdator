@@ -1,8 +1,15 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
 import EXPERIENCE from '@components/Experience.astro';
-import Card from '@components/Card.astro';
-import localBirdImage from '@images/card-front2.png';
+import Card1 from '@components/Card1.astro';
+import Card2 from '@components/Card2.astro';
+import Card3 from '@components/Card3.astro';
+import Card4 from '@components/Card4.astro';
+import Card5 from '@components/Card5.astro';
+
+import { Image } from 'astro:assets';
+import Imageadv from 'src/images/me.png';
+// import localBirdImage from '@images/card-front2.png';
 // import "../styles/global.css";
 
 
@@ -37,9 +44,29 @@ const pageTitle = "About Me";
 <BaseLayout>
   <!-- ---------------------------BIGPANEL-------------- -->
    
-    <h2>創辦人</h2><h1>蘇屁融</h1>
-    <h2>好吃懶做，愛嚕貓，還有睡覺</h2>
-
+    <!-- <h2>創辦人</h2><h1 class="indent-8">蘇屁融</h1>
+    <h2 class="indent-20">好吃懶做，愛嚕貓，還有睡覺</h2> -->
+<div class="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-2xl md:max-w-2xl">
+  <div class="md:flex">
+    <div class="md:shrink-0">
+      <!-- <img
+        class="h-48 w-full object-cover md:h-full md:w-48"
+        src="/img/building.jpg"
+        alt="Modern building architecture"
+      /> -->
+      <Image src={Imageadv} alt="ladvanced" class="size-[250px]" title="me"/>
+    </div>
+    <div class="p-8">
+      <div class="text-sm font-semibold text-(--color-mytext2) tracking-wide uppercase">創辦人</div>
+      <h1 class="indent-8 text-(--color-mytext2) mt-1 block text-xl">
+        蘇屁屁
+      </h1>
+      <p class="mt-2 text-gray-500 indent-16">
+        死宅宅，愛嚕貓，不務正業，厚臉皮，臭小子
+      </p>
+    </div>
+  </div>
+</div>
     <!-- <ul>
       <li>My name is {identity.firstName}. I am {identity.age} years old.</li>
       <li>I live in {identity.country} and I work currently as a {identity.occupation}. I am looking for a
@@ -52,7 +79,11 @@ const pageTitle = "About Me";
 <h1>Skills</h1>
   <div>
     <!-- <p>My skills are:</p> -->
-    <Card />
+    <Card1 />
+    <Card2 />
+    <Card3 />
+    <Card4 />
+    <Card5 />
     <!-- <div class="flex flex-row flex-wrap">
       {skills.map((skill) => <div class="text-white bg-blue-500 rounded-sm p-2 m-2 text-center border-2 border-solid shadow-md shadow-neutral-50">{skill}</div>)}
     -->

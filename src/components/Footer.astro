@@ -1,7 +1,18 @@
 ---
-const platform = "github";
-const username = "withastro";
-import Social from './Social.astro';
+// const platform = "github";
+// const username = "withastro";
+// import Social from './Social.astro';
+import "@styles/global.css";
+import { Image } from 'astro:assets';
+// import imgyt from 'src/assets/yt.svg';
+import imggh from 'src/assets/gh.svg';
+import imgx from 'src/assets/x.svg';
+import imgig from 'src/assets/ig.svg';
+import imgpx from 'src/assets/pixiv.svg';
+import imgvg from 'src/assets/vglogo.png';
+import imgas from 'src/assets/artstation.svg';
+import imgsc from 'src/assets/scloud.svg';
+// import imgig from 'src/assets/ig.svg';
 ---
 <style>
   footer {
@@ -9,10 +20,80 @@ import Social from './Social.astro';
     gap: 1rem;
     margin-top: 2rem;
   }
+  /* ---------------------------footer-------------- */
+#footerbtn a {
+  padding: 0.5rem 1rem;
+  /* margin: 1rem; */
+
+  color: white;
+  background-color: var(--color-nybtn);
+  text-decoration: none;
+}
+#footerbtn a:hover {
+  background-color: var(--color-nybtn-active);
+}
 </style>
-<footer>
+<footer class="flex flex-wrap">
   <!-- <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p> -->
-  <Social platform="twitter" username="@predat0r_94" />
+  <!-- <Social platform="twitter" username="@predat0r_94" />
   <Social platform="github" username="yujung-su" />
-  <Social platform="youtube" username="@predat0r_94" />
+  <Social platform="youtube" username="@predat0r_94" /> -->
+  <div class="m-5 hover:scale-120 transition duration-300" >
+    <a id = "footerbtn" href="https://www.twitter.com/@predat0r_94">
+    <Image  src={imgx} alt="ladvanced" class="size-[40px]" title="TwitterLink"/> 
+    </a>
+  </div>
+  <div class="m-5 hover:scale-120 transition duration-300">
+    <a  id = "footerbtn" href="https://www.github.com/@yujung-su">
+    <Image src={imggh} alt="ladvanced" class="size-[40px]" title="GithubLink"/> 
+    </a>
+  </div>
+  <div class="m-5 hover:scale-120 transition duration-300" >
+    <a id = "footerbtn" href="https://www.youtube.com/@predat0r_94">
+    <img src="/predator/src/assets/yt.svg" alt="YoutubeLink" class="size-[40px]" title="YoutubeLink"/>
+    </a>
+  </div>
+  <div class="m-5 hover:scale-120 transition duration-300" >
+    <a id = "footerbtn" href="https://www.instagram.com/@predat0r_94/">
+    <Image src={imgig} alt="ladvanced" class="size-[40px]" title="InstagramLink"/> 
+    </a>
+  </div>
+
+  <div class="m-5 hover:scale-120 transition duration-300" >
+    <a id = "footerbtn" href="https://www.pixiv.net/users/66022626">
+    <Image src={imgpx} alt="ladvanced" class="size-[40px]" title=PixivLink"/> 
+    </a>
+  </div>
+
+  <div class="m-5 hover:scale-120 transition duration-300" >
+    <a id = "footerbtn" href="https://vgen.co/Predat0r">
+    <Image src={imgvg} alt="ladvanced" class="size-[40px]" title=VgenLink"/> 
+    </a>
+  </div>
+  <div class="m-5 hover:scale-120 transition duration-300" >
+    <a id = "footerbtn" href="https://www.artstation.com/predat0r_942 ">
+    <Image src={imgas} alt="ladvanced" class="size-[40px]" title=ARTSTLink"/> 
+    </a>
+  </div>
+
+    <div class="m-5 hover:scale-120 transition duration-300" >
+    <a id = "footerbtn" href="https://soundcloud.com/predat0r_94 ">
+    <Image src={imgsc} alt="ladvanced" class="size-[40px]" title=SoundcloudL"/> 
+    </a>
+  </div>
+<!-- <ul class="m-5">
+  <li class="social-btn facebook" tooltip="Facebook">
+    <a href="#"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+  </li>
+  <li class="social-btn instagram" tooltip="Instagram">
+    <a href="#"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
+  </li>
+  <li class="social-btn pinterest" tooltip="Pinterest">
+    <a href="#"><ion-icon name="logo-pinterest" size="large"></ion-icon></a>
+  </li>
+  <li class="social-btn linkedin" tooltip="LinkedIn">
+    <a href="#"><ion-icon name="logo-linkedin" size="large"></ion-icon></a>
+  </li>
+</ul> -->
+
 </footer>

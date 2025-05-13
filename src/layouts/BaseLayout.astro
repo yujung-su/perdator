@@ -3,8 +3,8 @@ import Navigation from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
 import "@styles/global.css";
 const { pageTitle } = Astro.props;
-import { Image } from 'astro:assets';
-import localBirdImage from '@images/card-front2.png';
+// import { Image } from 'astro:assets';
+// import localBirdImage from '@images/card-front2.png';
 // import { getUser } from '../scripts/main.js';
 ---
 
@@ -19,7 +19,7 @@ import localBirdImage from '@images/card-front2.png';
 		  <meta name="generator" content={Astro.generator} >
 		  <title>{pageTitle}</title>
 		</head>
-		<body>
+		<body class="min-h-96 ">
 					  <!-- ------------------- Navigation item ---------------- -->
 		    <Navigation />
 
@@ -45,8 +45,9 @@ import localBirdImage from '@images/card-front2.png';
           <!-- debug -->
           <!-- <script type="module" src="../scripts/main.js"></script> -->
 
-		  <h1 class="pl-4 text-shadow-lg/50 text-shadow-teal-500">{pageTitle}</h1>
-		  <div class="m-4 p-3">
+		  
+		  <div class="pflex justify-center m-auto max-w-lg">
+			<h1 class="pl-4 text-shadow-lg/50 text-shadow-teal-500">{pageTitle}</h1>
 			<slot/>
 		  </div>
 		  <Footer />
