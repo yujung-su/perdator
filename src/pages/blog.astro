@@ -1,22 +1,43 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from '@layouts/BaseLayout.astro';
-const pageTitle = "My Astro Learning Blog";
-import BlogPost from '@components/BlogPost.astro';
+const pageTitle = "Portfolio & Blog";
+// import BlogPost from '@components/BlogPost.astro';
 // const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
-const allPosts = await getCollection("blog");
+// const allPosts = await getCollection("blog");
+import { Image } from 'astro:assets';
+import mushroom from 'src/images/mushroomstatic3-small.png';
+import watch from 'src/images/watch4-scene1bright.0016.png';
+import cells1 from 'src/images/newlook.png';
+import patticle1 from 'src/images/smolesingle.png';
+import skull from 'src/images/render3.png';
+import fractal from 'src/images/highres.png';
+import blackhole from 'src/images/bh2.png';
+import vtuberr from 'src/images/girl2-beforesplit.png';
+import anime1 from 'src/images/2023-26-3.png';
+
 ---
 
 
 <BaseLayout pageTitle={pageTitle}>
-  <p>This is where I will post about my journey learning Astro.</p>
-
-  <iframe width="420" height="315"
+  <p>我的作品集區，按照性質分類</p>
+  <br/>
+  <p>Here is my Youtube channel! Please subscribe!</p>
+  <iframe width="640" height="427"
   src="https://www.youtube.com/embed/i8Lw7OafuKk">
   </iframe>
+  <Image src={mushroom} alt="A bird sitting on a nest of eggs." />
+  <Image src={watch} alt="A bird sitting on a nest of eggs." />
+  <Image src={cells1} alt="A bird sitting on a nest of eggs." />
+  <Image src={patticle1} alt="A bird sitting on a nest of eggs." />
+  <Image src={skull} alt="A bird sitting on a nest of eggs." />
+  <Image src={fractal} alt="A bird sitting on a nest of eggs." />
+  <Image src={blackhole} alt="A bird sitting on a nest of eggs." />
+  <Image src={vtuberr} alt="A bird sitting on a nest of eggs." />
+  <Image src={anime1} alt="A bird sitting on a nest of eggs." />
 
   <ul>
     <!-- {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)} -->
-         {allPosts.map((post) => (<BlogPost url={`/predator/posts/${post.id}/`} title={post.data.title} />))}
+         <!-- {allPosts.map((post) => (<BlogPost url={`/predator/posts/${post.id}/`} title={post.data.title} />))} -->
   </ul>
 </BaseLayout>
