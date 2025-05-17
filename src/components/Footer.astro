@@ -5,7 +5,7 @@
 // import "@styles/global.css";
 import "@styles/background1.css";
 import { Image } from 'astro:assets';
-// import imgyt from 'src/assets/yt.svg';
+import imgyt from 'src/assets/yt.png';
 import imggh from 'src/assets/gh.svg';
 import imgx from 'src/assets/x.svg';
 import imgig from 'src/assets/ig.svg';
@@ -51,12 +51,13 @@ import imgsc from 'src/assets/scloud.svg';
   </div>
   <div class="m-5 hover:scale-120 transition duration-300" >
     <a id = "footerbtn" href="https://www.youtube.com/@predat0r_94">
-    <img src="/predator/src/assets/yt.svg" alt="YoutubeLink" class="size-[40px]" title="YoutubeLink"/>
+    <!-- <img src="/predator/src/assets/yt.svg" alt="YoutubeLink" class="size-[40px]" title="YoutubeLink"/> -->
+    <Image src={imgyt} alt="ladvanced" class="size-[40px] object-contain" title="YoutubeLink"/> 
     </a>
   </div>
   <div class="m-5 hover:scale-120 transition duration-300" >
     <a id = "footerbtn" href="https://www.instagram.com/@predat0r_94/">
-    <Image src={imgig} alt="ladvanced" class="size-[40px]" title="InstagramLink"/> 
+    <Image src={imgig} alt="ladvanced" class="size-[40px] " title="InstagramLink"/> 
     </a>
   </div>
 
