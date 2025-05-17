@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Tennis Coaching";
+import Whitebox from '@components/whitebox.astro';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -9,4 +10,7 @@ const pageTitle = "Tennis Coaching";
 	<h3>Prcing is</h3>
 	<h3>In academia Sinica and Taipei</h3>
 	<h3>Schedule?</h3>
+	<Whitebox imagePath="/src/images/me.png" t1={'網球C級教練，歡迎初學到進階的學員上課，課程偏向休閒為主，男女老少皆可'} 
+	t3={'個人班1v1教學: 800 NTD 每小時，團體班1vn教學: 800-100n每人每小時，最多4人同時上課，大學生打8折' }/>
+	<Whitebox imagePath="/src/images/me.png" t1={'歡迎專業教練臨時找我代課，價錢另議' }/>
 </BaseLayout>

@@ -1,10 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "2D Design";
+import Whitebox from '@components/whitebox.astro';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
 	<h2>I love to do 2D designs including logos, business card, posters, and advertisement.</h2>
 	<h3>Pictures here.</h3>
 	<h3>Also check out my 3D design & animation part! Link here.</h3>
+	<Whitebox imagePath="/src/images/card-front2.png" t1={'Logo、邀請卡設計'}/>
+	<Whitebox imagePath="/src/images/watch4-scene1bright.0016.png" t1={'產品廣告dm宣傳單設計'}/>
 </BaseLayout>

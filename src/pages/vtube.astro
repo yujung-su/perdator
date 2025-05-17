@@ -1,10 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Vtuber & Anime";
+import Whitebox from '@components/whitebox.astro';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
 	<h2>I love to draw cute anime girls!</h2>
 	<h3>I also design vtube models and simple rigging for cheap!</h3>
-	<h3>Pictures and videos here.</h3>
+	<h3>Pictures and videos here.我會畫簡單的動漫人物和Chibi卡通人物，也會畫Vtuber與基本Live2D rigging。歡迎與我合作</h3>
+	<Whitebox imagePath="/src/images/girl2-beforesplit.png" t1={'Vtube 人物設計'} t3={'基本款角色(有分圖層):價錢3000 NTD。Live2D 模組3000 NTD。也做動物角色。進階款:暫無提供(本人還在努力學習)。'}/>
+
+	<Whitebox imagePath="/src/images/2023-26-3.png" t1={'動漫人物設計'} t3={'(初學者level)依客戶需求繪製，價錢:1500可議價'}/>
 </BaseLayout>

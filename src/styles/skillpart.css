@@ -1,131 +1,11 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
-/* @theme {
-  --color-orange-300: oklch(83.7% 0.128 66.29); https://oklch.com/#0.3323,0.0685,271.34,100
-} */
 
-@theme {
-  --color-mytext: oklch(84.5% 0.143 164.978);
-  --color-mytext2: oklch(29.3% 0.066 243.157);
-  --color-mybg: oklch(0.0% 0.0 0.0);
-  --color-panel: oklch(37.3% 0.034 259.733);
-  --color-nybtn: oklch(52% 0.105 223.128);
-  --color-nybtn-active: oklch(68.5% 0.169 237.323);
-  --offset: 50px;
-  /* --offset2: 0; */
-}
-
-html {
-    background-color: var(--color-mybg);
-    /* background-image:linear-gradient(rgb(16, 35, 59), rgb(140, 158, 170)); */
-    /* background-position: top; */
-    /* background-attachment: fixed; */
-    background-image: url("/predator/testrender1png.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    /* background-size: 150px 150px; */
-    font-family: sans-serif;
-  }
-  
-  body {
-    margin: 0 auto;
-    width: 100%;
-    /* max-width: 120ch; */
-    /* padding: 1rem; */
-    line-height: 1.5;
-    color: var(--color-mytext);
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  h1 {
-    margin: 1rem 0;
-    font-size: 2.5rem;
-  }
-  p{
-    padding-left: 30px;
-  }
-
-
-
-
-
-  /* ------------------three js---------------- */
-#container {
-   width: 100%;
-   height: 100%;
-   display: block;
-}
-
-
-
-  /* ------------------Navigation Bars for small screen---------------- */
-
-  .nav-links {
-    /* width: 100%;
-    top: 5rem;
-    left: 48px;
-    background-color: #ff9776;
-    margin: 0; */
-    display: none;
-  }
-
-  
-.nav-links a {
-  /* display: block; */
-  /* text-align: center;
-  padding: 10px 0;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase; */
-}
-
-.nav-links a:hover,
-.nav-links a:focus {
-  /* background-color: #ff9776; */
-  color: white;
-}
-
-.expanded {
-  display: unset;
-}
-.reacthover{
-  /* background: none; */
- z-index: 1;
-}
-
-.reacthover span:hover{
-  /* display: unset; */
-  /* background-color:white; */
-}
-@media screen and (min-width: 1024px) {
-  .nav-links {
-    display: block;
-    /* margin-left: 5em;
-    position: static;
-    width: auto;
-    background: none; */
-  }
-
-  .nav-links a {
-    display: inline-block;
-    /* padding: 15px 20px; */
-  }
-
-}
 /* ---------------------------exapnder-------------- */
-.bigcontainer{
-
-
-}
 .borders1{
   /* box-shadow: 0px 0px 6px 6px #00a7d1; */
   border:10px solid rgb(32, 66, 255);
+  /* border-top: 10px solid rgb(32, 66, 255); */
   height:140px;
   width:140px;
   border-radius: 50%;
@@ -155,7 +35,8 @@ html {
   scale: 110%;
 }
 .borders12{
-  border:10px solid rgb(32, 66, 255);
+
+  border: 10px solid rgb(32, 66, 255);
   height:140px;
   width:140px;
   border-radius: 50%;
@@ -173,7 +54,7 @@ html {
   scale: 110%;
 }
 .borders13{
-  border:10px solid rgb(32, 66, 255);
+  border: 10px solid rgb(32, 66, 255);
   height:140px;
   width:140px;
   border-radius: 50%;
@@ -191,7 +72,7 @@ html {
   scale: 110%;
 }
 .borders14{
-  border:10px solid rgb(32, 66, 255);
+  border: 10px solid rgb(32, 66, 255);
   height:140px;
   width:140px;
   border-radius: 50%;
@@ -209,7 +90,7 @@ html {
   scale: 110%;
 }
 .borders15{
-  border:10px solid rgb(32, 66, 255);
+  border: 10px solid rgb(32, 66, 255);
   height:140px;
   width:140px;
   border-radius: 50%;
@@ -228,7 +109,7 @@ html {
 }
 .borders2{
   /* background-color: rgb(83, 158, 255); */
-  
+  /* border-top: 10px solid rgb(83, 158, 255); */
   margin-left: -20px;
   margin-top: -20px;
   border:10px solid rgb(83, 158, 255);
@@ -240,6 +121,7 @@ html {
 }
 .borders3{
   /* background-color: rgb(83, 158, 255); */
+  /* border-top: 10px solid rgb(137, 212, 255); */
   margin-left: -30px;
   margin-top: -30px;
   border: 10px solid rgb(137, 212, 255);
@@ -394,26 +276,4 @@ html {
     transform: translate(calc(var(--offset) * 7 ) , 0px );
   }
 
-}
-
-
-.dropdown {
-  /* position: relative; */
-  /* display: inline-block; */
- 
-}
-
-.dropdown-content {
-  transform: translate(-20px , 0px );
-  display: none;
-  position: absolute;
-  /* background-color: var(--color-mybg); */
-  /* min-width: 160px;  */
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-  padding: 12px 12px; 
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }

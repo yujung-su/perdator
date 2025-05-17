@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@plugin '@tailwindcss/typography';
+@import "@styles/theme.css";
+/* @theme {
+  --color-orange-300: oklch(83.7% 0.128 66.29); https://oklch.com/#0.3323,0.0685,271.34,100
+} */
+
+html {
+    background-color: var(--color-mybg);
+    /* background-image:linear-gradient(rgb(16, 35, 59), rgb(140, 158, 170)); */
+    /* background-position: top; */
+    /* background-attachment: fixed; */
+    background-image: url("/predator/testrender1png.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    /* background-size: 150px 150px; */
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 100%;
+    /* max-width: 120ch; */
+    /* padding: 1rem; */
+    line-height: 1.5;
+    color: var(--color-mytext);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+  }
+  p{
+    padding-left: 30px;
+  }

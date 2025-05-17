@@ -1,7 +1,10 @@
 ---
 import Navigation from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
-import "@styles/global.css";
+import "@styles/theme.css";
+// import "@styles/navbar.css";
+import "@styles/background1.css";
+
 const { pageTitle } = Astro.props;
 // import { Image } from 'astro:assets';
 // import localBirdImage from '@images/card-front2.png';
@@ -20,30 +23,17 @@ const { pageTitle } = Astro.props;
 		  <title>{pageTitle}</title>
 		</head>
 		<body class="min-h-96 ">
-					  <!-- ------------------- Navigation item ---------------- -->
-		    <Navigation />
+		<!-- ------------------- Navigation item ---------------- -->
+		<Navigation />
 
-			<div class="overflow-x-auto">
+		<div class="overflow-x-auto">
          <!-- ---------------------slideshow--------------------- -->
-			</div>
-
-			<script src="../scripts/main.js"></script>
-		    <!-- <script type="module">
-              import "/predator/src/scripts/main.js"; <script src="../scripts/entry.ts"></script>
-		    </script> -->
-					  <!-- ------------------3D component here------------------ -[32px]-->
-		    <div class="pt-0 h-64 md:h-64 min-w-64 mt-13">
-				<!-- <div class="w-full bg-white h-full"><div/> -->
-			<canvas id="container" class="w-full h-full"></canvas>
-		    </div>
-
+		</div>
+        <!-- ------------------3D component here------------------ -->
+        <!-- <Threejs /> -->
 
 		  <!-- <div class="bg-[url(/predator/src/images/card-front2.png)] bg-center bg-repeat"></div> -->
-		   <!-- ------------------mayimage ------------------------- -->
-		  <!-- <Image src={localBirdImage} alt="A bird sitting on a nest of eggs." /> -->
-		  
-          <!-- debug -->
-          <!-- <script type="module" src="../scripts/main.js"></script> -->
+
 
 		  
 		  <div class="pflex justify-center m-auto max-w-lg">
@@ -51,8 +41,5 @@ const { pageTitle } = Astro.props;
 			<slot/>
 		  </div>
 		  <Footer />
-		  <!-- <script>
-            import "../scripts/menu.js";
-		  </script> -->
 		</body>
 	  </html>

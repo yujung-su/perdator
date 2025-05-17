@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@plugin '@tailwindcss/typography';
+  /* ------------------three js---------------- */
+#container {
+   width: 100%;
+   height: 100%;
+   display: block;
+}
+
+  /* ------------------Navigation Bars for small screen---------------- */
+
+  .nav-links {
+    /* width: 100%;
+    top: 5rem;
+    left: 48px;
+    background-color: #ff9776;
+    margin: 0; */
+    display: none;
+  }
+
+  
+.nav-links a {
+  /* display: block; */
+  /* text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase; */
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  /* background-color: #ff9776; */
+  color: white;
+}
+
+.expanded {
+  display: unset;
+}
+.reacthover{
+  /* background: none; */
+ z-index: 1;
+}
+
+.reacthover span:hover{
+  /* display: unset; */
+  /* background-color:white; */
+}
+@media screen and (min-width: 1024px) {
+  .nav-links {
+    display: block;
+    /* margin-left: 5em;
+    position: static;
+    width: auto;
+    background: none; */
+  }
+
+  .nav-links a {
+    display: inline-block;
+    /* padding: 15px 20px; */
+  }
+
+}
+.dropdown {
+  /* position: relative; */
+  /* display: inline-block; */
+ 
+}
+
+.dropdown-content {
+  transform: translate(-20px , 0px );
+  display: none;
+  position: absolute;
+  /* background-color: var(--color-mybg); */
+  /* min-width: 160px;  */
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  padding: 12px 12px; 
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

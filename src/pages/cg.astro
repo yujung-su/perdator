@@ -1,10 +1,21 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "CG & VFX";
+import Whitebox from '@components/whitebox.astro';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
 	<h2>I am a beginner VFX artist and concept artist. I also do simple animations like product animations in TV and youtube. I make simple VFX effects for games and movies.</h2>
 	<h3>I am using Blender and Hudini. There are still a lot to learn! But I am having fun!</h3>
-	<h3>Put tpictures here!</h3>
+	
+	<Whitebox imagePath="/src/images/watch4-scene1bright.0016.png" t1={'產品廣告圖 / 動畫'
+}/>
+	<Whitebox imagePath="/src/images/mushroomstatic3-small.png" t1={'遊戲場景設計'
+}/>
+	<Whitebox imagePath="/src/images/render3.png" t1={'3D建模'
+}/>
+	<Whitebox imagePath="/src/images/render3.png" t1={'3D腳色設計(初學者level)'
+}/>
+	<Whitebox imagePath="/src/images/mushroomstatic3-small.png" t1={'Music Visualizer 音樂視覺效果'
+}/>
 </BaseLayout>
