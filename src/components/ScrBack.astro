@@ -1,0 +1,53 @@
+---
+// import ThemeIcon from './ThemeIcon.astro';
+// import "@styles/global.css";
+// import "@styles/theme.css";
+// import "@styles/navbar.css";
+// import "@styles/background1.css";
+// import "@scripts/Scrbackk.js";
+// import { Image } from 'astro:assets';
+// import chibb1 from '/src/images/chibi1.png';onclick="topFunction()" 
+
+---
+<button id="myBtn" title="Go to top" transition:persist>
+  <!-- <img class="h-24 w-24 object-cover ..." src="/predator/chibi1.png" /> -->
+</button>
+<script>
+  import "@scripts/Scrbackk.js";
+</script>
+<style>
+  #myBtn {
+  background-image: url("/predator/chibi1.png");
+  background-image: url("/predator/chibi3.png");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  /* background-position: center; */
+  background-size: cover;
+
+  display: block;
+  position: fixed; 
+  bottom: 20px;
+  right: 30px;
+  height: 150px;
+  width:150px;
+  z-index: 99; 
+  /* border: none;  */
+  /* outline: none;  */
+  /* background-color: red;  */
+  /* color: white; */
+  cursor: pointer;
+  padding: 15px;
+  /* border-radius: 10px;
+  font-size: 18px; */
+}
+@keyframes jump {
+  from, to { transform: translate(0px, 0px);}
+  50% { transform: translate(0px, 15px); }
+}
+#myBtn:hover {
+  background-image: url("/predator/chibi1.png");
+  /* background-color: #555; */
+  /* transform: translate(0px, 30px); */
+  animation: jump 1s infinite ease-in-out;
+}
+</style>
