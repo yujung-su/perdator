@@ -26,7 +26,8 @@ html {
     /* max-width: 120ch; */
     /* padding: 1rem; */
     line-height: 1.5;
-    color: var(--color-mytext);
+    /* color: var(--color-mytext); */
+    color: white;
   }
   
   * {

@@ -1,11 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Threejs from '@components/Threejs.astro';
+import Textbox from '@components/Textbox.astro';
 const pageTitle = "Predator - Home Page";
 ---
 <!-- pageTitle={pageTitle} -->
 <BaseLayout >
 	<Threejs />
-	<h2>Welcome to my personal website!</h2>
-	<h3>I am a creative person and love learning new things. I like music, coffee and caracal cat!</h3>
+	<Textbox t2={'Welcome to my personal website! I am a creative person and love learning new things. I like music, coffee and caracal cat!'}/>
 </BaseLayout>
