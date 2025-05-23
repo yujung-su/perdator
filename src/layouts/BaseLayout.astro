@@ -2,6 +2,7 @@
 import Navigation from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
 import "@styles/theme.css";
+import "@styles/global.css";
 // import "@styles/navbar.css";
 import "@styles/background1.css";
 
@@ -22,11 +23,12 @@ const { pageTitle } = Astro.props;
 		  <meta name="generator" content={Astro.generator} >
 		  <title>{pageTitle}</title>
 		</head>
-		<body class="min-h-96 ">
-		<!-- ------------------- Navigation item ---------------- -->
-		<Navigation />
+		<body>
+		<!-- ------------------- Navigation item bg-white ---------------- -->
+		<Navigation/>
 
 		<div class="overflow-x-auto">
+			
          <!-- ---------------------slideshow--------------------- -->
 		</div>
         <!-- ------------------3D component here------------------ -->
@@ -36,8 +38,8 @@ const { pageTitle } = Astro.props;
 
 
 		  
-		  <div class="pflex justify-center m-auto max-w-lg">
-			<h1 class="pl-4 text-shadow-lg/50 text-shadow-teal-500">{pageTitle}</h1>
+		  <div class="justify-center m-auto max-w-lg">
+			<!-- <h1 class="pl-4 text-shadow-lg/50 text-shadow-teal-500">{pageTitle}</h1> -->
 			<slot/>
 		  </div>
 		  <Footer />

@@ -2,14 +2,12 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Tennis Coaching";
 import Whitebox from '@components/whitebox.astro';
+import Textbox from '@components/Textbox.astro';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<h2>I am a certified tennis coach in Taiwan.</h2>
-	<h3>Tennis class 1v1 and group for recreational levels!</h3>
-	<h3>Prcing is</h3>
-	<h3>In academia Sinica and Taipei</h3>
-	<h3>Schedule?</h3>
+	<Textbox t1={'網球教練'} t2={'I am a certified tennis coach in Taiwan. Tennis class 1v1 and group for recreational levels! We will play at the outdoor court near the gym in academia Sinica'}/>
+
 	<Whitebox imagePath="/src/images/me.png" t1={'網球C級教練，歡迎初學到進階的學員上課，課程偏向休閒為主，男女老少皆可'} 
 	t3={'個人班1v1教學: 600 NTD 每小時，團體班教學: 400 NTD每人每小時，最多4人同時上課' }/>
 	<Whitebox imagePath="/src/images/me-tennis.png" t1={'Tennis Coaching near Sinica'} 

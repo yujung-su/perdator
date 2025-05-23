@@ -2,13 +2,12 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Web Design";
 import Whitebox from '@components/whitebox.astro';
+import Textbox from '@components/Textbox.astro';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<h2>I can also do simple Youtube videos and shorts.</h2>
-	<h3>Product animation and internal design animation</h3>
-	<h3>Also check out my 3D design & animation part! Link here.</h3>
+	<Textbox t2={'I can also do simple Youtube videos and shorts. Product animation and internal design animation Also check out my 3D design & animation part! Link here.'}/>
 	
-	<Whitebox imagePath="/src/images/girl2-beforesplit.png" t1={'Front-End網頁設計'} t3={'各類靜態網頁，部落格，公司網頁，照客戶需求議價。使用Astro，(參考:我的網頁20000 NTD，交期1個月)'}/>
-<Whitebox imagePath="/src/images/girl2-beforesplit.png" t1={'動態網頁、Back-End網頁設計'} t3={'暫無此服務(還在學Vue、MySQL等)'}/>
+	<Whitebox imagePath="/src/images/screnshot.png" t1={'Front-End網頁設計'} t3={'各類靜態網頁，部落格，公司網頁，照客戶需求議價。使用Astro'}/>
+<Whitebox imagePath="/src/images/screnshot.png" t1={'動態網頁、Back-End網頁設計'} t3={'暫無此服務(還在學Vue、MySQL等)'}/>
 </BaseLayout>

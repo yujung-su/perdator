@@ -1,19 +1,10 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
+@import "@styles/theme.css";
 /* @theme {
   --color-orange-300: oklch(83.7% 0.128 66.29); https://oklch.com/#0.3323,0.0685,271.34,100
 } */
 
-@theme {
-  --color-mytext: oklch(0.2 0.1307 199.59);
-  --color-mytext2: oklch(29.3% 0.066 243.157);
-  --color-mybg: oklch(0.0% 0.0 0.0);
-  --color-panel: oklch(37.3% 0.034 259.733);
-  --color-nybtn: oklch(52% 0.105 223.128);
-  --color-nybtn-active: oklch(68.5% 0.169 237.323);
-  --offset: 50px;
-  /* --offset2: 0; */
-}
 
 /* html {
     background-color: var(--color-mybg);
@@ -27,12 +18,15 @@
   
   body {
     margin: 0 auto;
+    margin-top: 70px;
     width: 100%;
+    min-height: 100%;
     /* max-width: 120ch; */
     /* padding: 1rem; */
     line-height: 1.5;
-    /* color: var(--color-mytext); */
+    color: var(--color-mytext);
     /* color:grey; */
+    /* background: rgb(180, 215, 255); */
   }
   
   * {

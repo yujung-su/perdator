@@ -5,7 +5,7 @@
 } */
 
 @theme {
-  --color-mytext: oklch(84.5% 0.143 164.978);
+  --color-mytext: oklch(95.0% 0 0);
   --color-mytext2: oklch(29.3% 0.066 243.157);
   --color-mybg: oklch(0.0% 0.0 0.0);
   --color-panel: oklch(37.3% 0.034 259.733);

@@ -72,16 +72,16 @@ function resizeRendererToDisplaySize(renderer) {
 
 
 // --------------------camera------------------------------
-const fov = 75;
+const fov = 50;
 const aspect = 2; // the canvas default
 const near = 0.1;
-const far = 5;
+const far = 10;
 const camera = new THREE.PerspectiveCamera( fov, aspect, near, far );
 // const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
 const controls = new OrbitControls( camera, renderer.domElement );
-camera.position.z = 2;
-
+camera.position.z = 5;
+// camera.position.y = 1;
 const scene = new THREE.Scene();
 // --------------------resize windows------------------------------
 // function onWindowResize(){
@@ -103,50 +103,82 @@ composer.addPass(new EffectPass(camera, new BloomEffect()));
 // --------------------light------------------------------
 
 	const color = 0xFFFFFF;
-	const intensity = 3;
+	const intensity = 10;
 	const light = new THREE.DirectionalLight( color, intensity );
 	light.position.set( - 1, 2, 4 );
 	scene.add( light );
 
 // --------------------geo------------------------------
-const boxWidth = 1;
-const boxHeight = 1;
-const boxDepth = 1;
+// ---------------------- change material -------------
+// const material = new THREE.MeshToonMaterial();
+const material =  THREE.MeshLambertMaterial;
+// gltfLoader = (gltf) => {
+//   const model = gltf.scene;
+//   model.traverse((o) => {
+//     if (o.isMesh) o.material = material;
+//   });
+// }
+loader.load( '/predator/myhuman2.glb', function ( gltf ) {
+  const model = gltf.scene;
+
+//   gltf.scene.traverse((o) => {
+//      if (o.material && o.material.map) {
+//         console.log(o.name);
+//         o.material.map.encoding = 3001; linear encoding
+//      }
+//   });
+  scene.add( model );
+
+}, undefined, function ( error ) {
+
+  console.error( error );
+
+} );
+
 // const geometry = new THREE.BoxGeometry( boxWidth, boxHeight, boxDepth );
-function makeInstance( geometry, color, x ) {
 
-	const material = new THREE.MeshPhongMaterial( { color } );
+// const boxWidth = 1;
+// const boxHeight = 1;
+// const boxDepth = 1;
 
-	const cube = new THREE.Mesh( geometry, material );
-	scene.add( cube );
+// function makeInstance( geometry, color, x ) {
 
-	cube.position.x = x;
+// 	const material = new THREE.MeshPhongMaterial( { color } );
 
-	return cube;
+// 	const cube = new THREE.Mesh( geometry, material );
+// 	scene.add( cube );
 
-}
+// 	cube.position.x = x;
+
+// 	return cube;
+
+// }
 // --------------------material------------------------------
-var textureLoader = new THREE.TextureLoader();
-textureLoader.crossOrigin = true;
 // const loader = new THREE.TextureLoader();
-const texture = textureLoader.load('/predator/images.png',
-  function(texture) {
-    texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-    texture.repeat.set( 2, 2 );
-    var material = new THREE.MeshLambertMaterial( {map: texture} );
-  }
-);
-texture.colorSpace = THREE.SRGBColorSpace;
-const material = new THREE.MeshPhongMaterial({
-color: 0xFF8844,
-map: texture,
-});
+
+// var textureLoader = new THREE.TextureLoader();
+// textureLoader.crossOrigin = true;
+
+// const texture = textureLoader.load('/predator/images.png',
+//   function(texture) {
+//     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+//     texture.repeat.set( 2, 2 );
+//     var material = new THREE.MeshLambertMaterial( {map: texture} );
+//   }
+// );
+// texture.colorSpace = THREE.SRGBColorSpace;
+// const material = new THREE.MeshPhongMaterial({
+// color: 0xFF8844,
+// map: texture,
+// });
+
+
 // const material = new THREE.MeshPhongMaterial( { color } );
 
-const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+// const geometry = new THREE.BoxGeometry( 1, 1, 1 );
 // const material = new THREE.MeshPhongMaterial( { color: 0x00ff00 } );
-const cube = new THREE.Mesh( geometry, material );
-scene.add( cube );
+// const cube = new THREE.Mesh( geometry, material );
+// scene.add( cube );
 
 // const cubes = [
 // 	makeInstance( geometry, 0x44aa88, 0 ),
