@@ -9,7 +9,7 @@
   height:140px;
   width:140px;
   border-radius: 20%;
-  /* background-image: url("/predator/music.png"); */
+  background-image: url("/predator/vfx.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -18,7 +18,7 @@
   /* transition: rotate 0.75s; */
   /* z-index: 0; */
   /* box-shadow: 10px 10px 20px 20px rgba(0,0,0,0.4); */
-  background: rgb(0, 29, 109);
+  /* background: rgb(0, 29, 109); */
   position:relative;
   z-index:0;
   /* border-color: rgb(150, 225, 255); */
@@ -28,10 +28,11 @@
   /* transform: translate(-70%, -90%);  */
   /* animation-duration: 1s; */
 }
+
 .borders1:hover{
-  /* rotate: 5deg; */
-  color:black;
-  background: rgb(180, 215, 255);
+
+  /* color:black;
+  background: rgb(180, 215, 255); */
   scale: 110%;
 }
 .borders12{
@@ -42,14 +43,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background: rgb(0, 29, 109);
+  /* background: rgb(0, 29, 109); */
+  background-image: url("/predator/music.png");
   position:relative;
   z-index:0;
 }
 .borders12:hover{
 
-  color:black;
-  background: rgb(180, 215, 255);
+  /* color:black;
+  background: rgb(180, 215, 255); */
   scale: 110%;
 }
 .borders13{
@@ -60,14 +62,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background: rgb(0, 29, 109);
+  /* background: rgb(0, 29, 109); */
+  background-image: url("/predator/webdev.png");
   position:relative;
   z-index:0;
 }
 .borders13:hover{
-
+/* 
   color:black;
-  background: rgb(180, 215, 255);
+  background: rgb(180, 215, 255); */
   scale: 110%;
 }
 .borders14{
@@ -78,14 +81,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background: rgb(0, 29, 109);
+  /* background: rgb(0, 29, 109); */
+   background-image: url("/predator/vtuberrig.png");
   position:relative;
   z-index:0;
 }
 .borders14:hover{
-
+/* 
   color:black;
-  background: rgb(180, 215, 255);
+  background: rgb(180, 215, 255); */
   scale: 110%;
 }
 .borders15{
@@ -96,14 +100,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background: rgb(0, 29, 109);
+  /* background: rgb(0, 29, 109); */
+  background-image: url("/predator/coding.png");
   position:relative;
   z-index:0;
 }
 .borders15:hover{
-
+/* 
   color:black;
-  background: rgb(180, 215, 255);
+  background: rgb(180, 215, 255); */
   scale: 110%;
 }
 .borders2{
