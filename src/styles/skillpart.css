@@ -4,11 +4,11 @@
 /* ---------------------------exapnder-------------- */
 .borders1{
   /* box-shadow: 0px 0px 6px 6px #00a7d1; */
-  border:10px solid rgb(32, 66, 255);
+  border-top:10px solid rgb(32, 66, 255);
   /* border-top: 10px solid rgb(32, 66, 255); */
   height:140px;
   width:140px;
-  border-radius: 50%;
+  border-radius: 20%;
   /* background-image: url("/predator/music.png"); */
   background-repeat: no-repeat;
   background-position: center;
@@ -35,11 +35,10 @@
   scale: 110%;
 }
 .borders12{
-
-  border: 10px solid rgb(32, 66, 255);
+  border-top: 10px solid rgb(32, 66, 255);
   height:140px;
   width:140px;
-  border-radius: 50%;
+  border-radius: 20%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -54,10 +53,10 @@
   scale: 110%;
 }
 .borders13{
-  border: 10px solid rgb(32, 66, 255);
+  border-top: 10px solid rgb(32, 66, 255);
   height:140px;
   width:140px;
-  border-radius: 50%;
+  border-radius: 20%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -72,10 +71,10 @@
   scale: 110%;
 }
 .borders14{
-  border: 10px solid rgb(32, 66, 255);
+  border-top: 10px solid rgb(32, 66, 255);
   height:140px;
   width:140px;
-  border-radius: 50%;
+  border-radius: 20%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -90,10 +89,10 @@
   scale: 110%;
 }
 .borders15{
-  border: 10px solid rgb(32, 66, 255);
+  border-top: 10px solid rgb(32, 66, 255);
   height:140px;
   width:140px;
-  border-radius: 50%;
+  border-radius: 20%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -109,84 +108,63 @@
 }
 .borders2{
   /* background-color: rgb(83, 158, 255); */
-  /* border-top: 10px solid rgb(83, 158, 255); */
-  margin-left: -20px;
+  border-top: 10px solid rgb(83, 158, 255);
+  /* margin-left: -20px; */
   margin-top: -20px;
-  border:10px solid rgb(83, 158, 255);
-  height:160px;
-  width:160px;
-  border-radius: 50%;
+  /* border:10px solid rgb(83, 158, 255); */
+  height:140px;
+  width:140px;
+  border-radius: 20%;
   position: absolute;
   z-index: -1;
 }
 .borders3{
   /* background-color: rgb(83, 158, 255); */
-  /* border-top: 10px solid rgb(137, 212, 255); */
-  margin-left: -30px;
-  margin-top: -30px;
-  border: 10px solid rgb(137, 212, 255);
-  height:180px;
-  width:180px;
-  border-radius: 50%;
+  border-top: 10px solid rgb(137, 212, 255);
+  /* margin-left: -30px; */
+  margin-top: -25px;
+  /* border: 10px solid rgb(137, 212, 255); */
+  height:140px;
+  width:140px;
+  border-radius: 20%;
   position: absolute;
   z-index: -2;
   /* transform: translate(0, -150px); */
 }
 .borders4{
   /* box-shadow: 0px 0px 6px 6px #00a7d1; */
-  border:5px solid rgb(32, 66, 255);
+  border-top: 5px solid rgb(32, 66, 255);
   height:50px;
   width:50px;
-  border-radius: 50%;
+  /* border-radius: 20%; */
   margin-top: -40px;
   margin-left:-10px;
   position:absolute;
 }
 .borders5{
   /* box-shadow: 0px 0px 6px 6px #00a7d1; */
-  border:5px solid rgb(83, 158, 255);
-  height:60px;
-  width:60px;
-  border-radius: 50%;
+  border-top: 5px solid rgb(83, 158, 255);
+  height:50px;
+  width:50px;
+  /* border-radius: 20%; */
   margin-top: -45px;
-  margin-left:-15px;
+  margin-left:-10px;
   position:absolute;
 }
 .borders6{
   /* box-shadow: 0px 0px 6px 6px #00a7d1; */
-  border:5px solid rgb(137, 212, 255);
-  height:70px;
-  width:70px;
-  border-radius: 50%;
+  border-top: 5px solid rgb(137, 212, 255);
+  height:50px;
+  width:50px;
+  /* border-radius: 20%; */
   margin-top: -50px;
-  margin-left:-20px;
+  margin-left:-10px;
   position:absolute;
 }
-@media (width< 48rem) {
-  .exppp{
-    margin-left:20px;
-  }
-  .expanderr{
-    /* width:75%; */
-    /* height:200px; */
-    /* transition: width 1s; */
-    /* transition: height 0.5s; */
-    /* transition-timing-function: ease-in-out; */
-  }
-}
+/* @media (width< 48rem) {
+} */
 
 @media (width>= 48rem) {
-  .exppp{
-    transition: width 1s;
-    transition-timing-function: ease-in-out;
-    margin-top:-20px;
-    margin-left:40px;
-    /* z-index:-2; */
-  }
-  .expanderr{
-    width:100%;
-    margin-left:40px;
-  }
   .mv1-1{position: absolute;z-index:-3;transition: transform 0.3s ease-in-out;margin-top:-150px;}
   .mv1-2{position: absolute;z-index:-3;transition: transform 0.3s ease-in-out;margin-top:-150px;}
   .mv1-3{position: absolute;z-index:-3;transition: transform 0.3s ease-in-out;margin-top:-150px;}
