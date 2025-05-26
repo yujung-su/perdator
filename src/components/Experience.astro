@@ -39,15 +39,15 @@ const EXPERIENCE = [
   }
 ];
 ---
-
-<div class="relative max-md:mt-0 mt-4 bg-white/10 backdrop-blur-sm rounded-lg" aria-label="Professional experience">
-  <ol class="relative mt-10 mb-6">
+<!-- overflow-hidden rounded-xl shadow-2xl max-w-lg md:max-w-2xl mt-12 mb-8 bg-white -->
+<div class="rounded-xl shadow-2xl max-w-lg md:max-w-2xl mt-12 mb-24 bg-white/10 backdrop-blur-sm" aria-label="Professional experience">
+  <ol class="relative mt-8 mb-4">
     {
       EXPERIENCE.map((experience, index) => (
         <li class="">
           <article role="article" aria-labelledby={`experience-title-${index}`}>
             <div
-              class="flex flex-col gap-2 text-white md:col-span-3"
+              class="flex flex-col gap-1 pt-4 text-white md:col-span-3"
               aria-describedby={`experience-title-${index}`}
             >
               <ExperienceItem {...experience} />
