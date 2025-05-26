@@ -13,21 +13,21 @@ const { imagePath, t1, t2, t3, t4} = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/*.{jpeg,jpg,png,gif}');
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "/predator/src/images/*.{jpeg,jpg,png,gif}"`);
 ---
-<div class="overflow-hidden rounded-xl shadow-2xl max-w-lg md:max-w-2xl mt-12 mb-8 bg-white">
+<div class="overflow-hidden rounded-xl shadow-2xl max-w-lg md:max-w-2xl mt-6 mb-8 bg-white 2xl:col-span-1">
   <div class="md:flex">
     <div class="md:shrink-0 flex justify-center">
       <Image src={images[imagePath]()} alt="ladvanced" class="size-[250px] object-cover" title="me"/>
     </div>
     <div class="p-8">
-      <div class="text-l font-semibold text-(--color-mytext2) tracking-wide uppercase">{t1}</div>
-      <h1 class=" text-(--color-mytext2) mt-1 block md:text-l"> 
+      <div class="text-l 2xl:text-2xl font-semibold text-(--color-mytext2) tracking-wide uppercase ">{t1}</div>
+      <h1 class="text-(--color-mytext2) mt-1 block 2xl:text-xl"> 
         <!-- indent-8 indent-16-->
         {t2}
       </h1>
-      <p class="mt-2 text-gray-500 md:text-l">
+      <p class="mt-2 text-gray-500 2xl:text-xl">
         {t3}
       </p>
-       <p class="mt-2 text-gray-500 md:text-l">
+       <p class="mt-2 text-gray-500 2xl:text-xl">
         {t4}
       </p>
     </div>

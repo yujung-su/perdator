@@ -40,11 +40,11 @@ const EXPERIENCE = [
 ];
 ---
 <!-- overflow-hidden rounded-xl shadow-2xl max-w-lg md:max-w-2xl mt-12 mb-8 bg-white -->
-<div class="rounded-xl shadow-2xl max-w-lg md:max-w-2xl mt-12 mb-12 bg-white/10 backdrop-blur-sm" aria-label="Professional experience">
+<div class="rounded-xl shadow-2xl max-w-lg md:max-w-2xl mt-12 mb-12 ml-3 bg-white/10 backdrop-blur-sm inline-block" aria-label="Professional experience">
   <ol class="relative mt-8 mb-4">
     {
       EXPERIENCE.map((experience, index) => (
-        <li class="">
+        <li class="2xl:text-xl">
           <article role="article" aria-labelledby={`experience-title-${index}`}>
             <div
               class="flex flex-col gap-1 pt-4 text-white md:col-span-3"

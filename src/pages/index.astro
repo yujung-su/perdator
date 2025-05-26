@@ -15,12 +15,14 @@ const pageTitle = "Predator - Home Page";
 <!-- pageTitle={pageTitle} -->
 <BaseLayout >
 	<Threejs />
-	<Textbox t2={'Welcome to my personal website! I am a creative person and love learning new things. I like music, coffee and caracal cat!'}/>
-    <h1>關於我</h1>
-	<Whitebox imagePath="/src/images/me.png" t2={'蘇昱融'} t3={'學習是一生最重要的事'}/>
-  <!-- t1={'創辦人'}  -->
-<h1>Skills</h1>
-  <div class="block">
+   <div class="inline-block">
+    <Textbox t2={'Welcome to my personal website! I am a creative person and love learning new things. I like music, coffee and caracal cat!'}/>
+      <h1>關於我</h1>
+    <Whitebox imagePath="/src/images/me.png" t2={'蘇昱融'} t3={'學習是一生最重要的事'}/>
+    <!-- t1={'創辦人'}  -->
+  </div>
+  <div class="inline-block">
+    <h1>Skills</h1>
     <!-- <p>My skills are:</p>flex flex-col flex-wrap -->
     <Card1 />
     <Card2 />
