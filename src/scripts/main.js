@@ -80,7 +80,7 @@ const camera = new THREE.PerspectiveCamera( fov, aspect, near, far );
 // const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
 const controls = new OrbitControls( camera, renderer.domElement );
-camera.position.z = 5;
+camera.position.z = 6;
 // camera.position.y = 1;
 const scene = new THREE.Scene();
 // --------------------resize windows------------------------------
