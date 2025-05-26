@@ -39,15 +39,17 @@
   padding: 15px;
   /* border-radius: 10px;
   font-size: 18px; */
+  animation: jump 2s infinite ease-in-out;
 }
 @keyframes jump {
   from, to { transform: translate(0px, 0px);}
-  50% { transform: translate(0px, 10px); }
+  50% { transform: translate(0px, -10px); }
 }
 #myBtn:hover {
   background-image: url("/predator/chibi1.png");
   /* background-color: #555; */
   /* transform: translate(0px, 30px); */
-  animation: jump 2s infinite ease-in-out;
+  /* animation: jump 2s infinite ease-in-out; */
+    /* animation: jump 0.2s  ease-in-out; */
 }
 </style>

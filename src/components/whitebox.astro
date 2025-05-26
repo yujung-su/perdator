@@ -19,15 +19,15 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
       <Image src={images[imagePath]()} alt="ladvanced" class="size-[250px] object-cover" title="me"/>
     </div>
     <div class="p-8">
-      <div class="text-sm font-semibold text-(--color-mytext2) tracking-wide uppercase">{t1}</div>
-      <h1 class=" text-(--color-mytext2) mt-1 block text-xl"> 
+      <div class="text-l font-semibold text-(--color-mytext2) tracking-wide uppercase">{t1}</div>
+      <h1 class=" text-(--color-mytext2) mt-1 block md:text-l"> 
         <!-- indent-8 indent-16-->
         {t2}
       </h1>
-      <p class="mt-2 text-gray-500">
+      <p class="mt-2 text-gray-500 md:text-l">
         {t3}
       </p>
-       <p class="mt-2 text-gray-500">
+       <p class="mt-2 text-gray-500 md:text-l">
         {t4}
       </p>
     </div>
