@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Threejs from '@components/Threejs.astro';
+// import Threejs from '@components/Threejs.astro';
 import Textbox from '@components/Textbox.astro';
 import EXPERIENCE from '@components/Experience.astro';
 import Card1 from '@components/Card1.astro';
@@ -10,11 +10,25 @@ import Card4 from '@components/Card4.astro';
 import Card5 from '@components/Card5.astro';
 import Whitebox from '@components/whitebox.astro';
 import "@styles/skillpart.css"; 
+
+import { Image } from 'astro:assets';
+import mushroom from 'src/images/mushroomstatic3-small.png';
+import watch from 'src/images/watch4-scene1bright.0016.png';
+import cells1 from 'src/images/newlook.png';
+import patticle1 from 'src/images/smolesingle.png';
+import skull from 'src/images/render3.png';
+import fractal from 'src/images/highres.png';
+import blackhole from 'src/images/bh2.png';
+import vtuberr from 'src/images/girl2-beforesplit.png';
+import anime1 from 'src/images/2023-26-3.png';
+
+
+
 const pageTitle = "Predator - Home Page";
 ---
 <!-- pageTitle={pageTitle} -->
 <BaseLayout >
-	<Threejs />
+	<!-- <Threejs /> -->
    <div class="inline-block">
     <Textbox t2={'Welcome to my personal website! I am a creative person and love learning new things. I like music, coffee and caracal cat!'}/>
       <h1>關於我</h1>
@@ -36,6 +50,24 @@ const pageTitle = "Predator - Home Page";
   <h1>Education</h1>
   <div>
   <EXPERIENCE/>
+  </div>
+  <div class="inline-block">
+    <h1>作品集</h1>
+    <!-- <p>Here is my Youtube channel! Please subscribe!</p>
+    <iframe width="640" height="427"
+    src="https://www.youtube.com/embed/i8Lw7OafuKk">
+    </iframe> -->
+    <div class="columns-3 gap-4 mt-4">
+      <Image class="rounded-lg mt-2 mb-2" src={mushroom} alt="A bird sitting on a nest of eggs." />
+      <Image class="rounded-lg mt-2 mb-2" src={watch} alt="A bird sitting on a nest of eggs." />
+      <Image class="rounded-lg mt-2 mb-2" src={cells1} alt="A bird sitting on a nest of eggs." />
+      <Image class="rounded-lg mt-2 mb-2" src={patticle1} alt="A bird sitting on a nest of eggs." />
+      <Image class="rounded-lg mt-2 mb-2" src={skull} alt="A bird sitting on a nest of eggs." />
+      <Image class="rounded-lg mt-2 mb-2" src={fractal} alt="A bird sitting on a nest of eggs." />
+      <Image class="rounded-lg mt-2 mb-2" src={blackhole} alt="A bird sitting on a nest of eggs." />
+      <Image class="rounded-lg mt-2 mb-2" src={vtuberr} alt="A bird sitting on a nest of eggs." />
+      <Image class="rounded-lg mt-2 mb-2" src={anime1} alt="A bird sitting on a nest of eggs." />
+    </div>
   </div>
 </BaseLayout>
 <script>
