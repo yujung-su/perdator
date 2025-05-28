@@ -29,7 +29,7 @@ import localBirdImage from '/src/images/logo-white512.png';
 </div> -->
 
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-<nav class="bg-gray-900 w-full fixed top-0 flex items-center justify-between flex-wrap p-2 shadow-xl shadow-cyan-500/50 transition duration-300 brightness-100 hover:brightness-120 reacthover">
+<nav class="bg-gray-900 w-full fixed top-0 flex items-center justify-between flex-wrap p-2 shadow-xl shadow-cyan-500/50 transition duration-300 brightness-100 hover:brightness-120 reacthover cursor-pointer md:cursor-default">
   <div class="flex items-center text-white w-full min-[1024px]:w-110">
     <!-- <a>獵人劈視覺效果工作室</a> -->
     <Image src={localBirdImage} alt="logo" class="size-[50px]"/>
@@ -97,8 +97,52 @@ import localBirdImage from '/src/images/logo-white512.png';
         接案 & 作品區 服務
       </a>
       </button> -->
+<!-- --------------------------------- mobile area --------------------------------- -->
+      <button class="hover:bg-sky-700 duration-150 p-2 space-x-px rounded-md w-full md:hidden">
+        <a href="/predator/music/" class="mt-4 text-teal-200">
+          音樂、音效
+        </a>
+      </button>
+
+      <button class="hover:bg-sky-700 duration-150 p-2 space-x-px rounded-md w-full md:hidden">
+        <a href="/predator/cg/" class="mt-4 text-teal-200">
+          CG & 特效
+        </a>
+      </button>
+
+      <button class="hover:bg-sky-700 duration-150 p-2 space-x-px rounded-md w-full md:hidden">
+        <a href="/predator/tennis/" class="mt-4 text-teal-200">
+          網球教練
+        </a>
+      </button>
+
+      <button class="hover:bg-sky-700 duration-150 p-2 space-x-px rounded-md w-full md:hidden">
+        <a href="/predator/graphicd/" class="mt-4 text-teal-200">
+          平面設計
+        </a>
+      </button>
+
+      <button class="hover:bg-sky-700 duration-150 p-2 space-x-px rounded-md w-full md:hidden">
+        <a href="/predator/vtube/" class="mt-4 text-teal-200">
+          Vtuber製作
+        </a>
+      </button>
+
+      <button class="hover:bg-sky-700 duration-150 p-2 space-x-px rounded-md w-full md:hidden">
+        <a href="/predator/wd/" class="mt-4 text-teal-200">
+          網頁設計
+        </a>
+      </button>
+
+      <button class="hover:bg-sky-700 duration-150 p-2 space-x-px rounded-md w-full md:hidden">
+        <a href="/predator/ot/" class="mt-4 text-teal-200">
+          科研繪圖
+        </a>
+      </button>
+<!-- --------------------------------- desktop area --------------------------------- -->
       <button class="dropdown hover:bg-sky-700 duration-150 md:inline-block p-2 space-x-px rounded-md w-full md:w-40">
         <span class="mt-4 md:inline-block md:mt-0 text-teal-200">接案 & 作品區</span>
+        <!-- <div class="dropdown-content md:-translate-x-[40px] md:w-[300px] bg-gray-900 w-full flex flex-col md:rounded-md shadow-lg shadow-cyan-500"> -->
         <div class="dropdown-content md:-translate-x-[40px] md:w-[300px] bg-gray-900 w-full flex flex-col md:rounded-md shadow-lg shadow-cyan-500">
           <ul>
             <li class="hover:bg-sky-700 duration-150 rounded-md h-10 pt-2"><a href="/predator/music/">音樂、音效</a></li>
