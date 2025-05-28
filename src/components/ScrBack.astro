@@ -9,6 +9,8 @@
 // import chibb1 from '/src/images/chibi1.png';onclick="topFunction()" 
 
 ---
+<!-- <link rel="prefetch" href="/predator/chibi3.png"/>
+<link rel="prefetch" href="/predator/chibi1.png"/> -->
 <button id="myBtn" title="Go to top" transition:persist>
   <!-- <img class="h-24 w-24 object-cover ..." src="/predator/chibi1.png" /> -->
 </button>
@@ -17,20 +19,19 @@
 </script>
 <style>
   #myBtn {
-  background-image: url("/predator/chibi1.png");
+  /* background-image: url("/predator/chibi1.png"); */
   background-image: url("/predator/chibi3.png");
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   /* background-position: center; */
   background-size: cover;
-
   display: block;
   position: fixed; 
   bottom: 20px;
   right: 30px;
   height: 200px;
   width:200px;
-  z-index: 99; 
+  z-index: 98; 
   /* border: none;  */
   /* outline: none;  */
   /* background-color: red;  */
@@ -41,15 +42,28 @@
   font-size: 18px; */
   animation: jump 2s infinite ease-in-out;
 }
+
+  #myBtn:hover{
+  background-image: url("/predator/chibi1.png");
+  bottom: 30px;
+  /* transform: translateX(30rem); */
+}
+  #myBtn:active{
+  background-image: url("/predator/chibi1.png");
+  bottom: 30px;
+  /* transform: translateX(30rem); */
+}
 @keyframes jump {
   from, to { transform: translate(0px, 0px);}
   50% { transform: translate(0px, -10px); }
 }
-#myBtn:hover {
-  background-image: url("/predator/chibi1.png");
+ /* background-image: url("/predator/chibi1.png"); */
   /* background-color: #555; */
   /* transform: translate(0px, 30px); */
   /* animation: jump 2s infinite ease-in-out; */
     /* animation: jump 0.2s  ease-in-out; */
-}
+/* #myBtn:hover {
+
+    opacity: 0;
+} */
 </style>
