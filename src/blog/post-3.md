@@ -1,12 +1,14 @@
 ---
 # layout: ../../layouts/MarkdownPostLayout.astro
-title: My Third Blog Post
-author: Astro Learner
-description: "I had some challenges, but asking in the community really helped!"
+title: '架網站'
+pubDate: 2025-04-15
+description: '架網站'
+author: '蘇昱融'
 image:
-    url: "https://docs.astro.build/assets/rays.webp"
-    alt: "The Astro logo on a dark background with rainbow rays."
-pubDate: 2022-07-15
-tags: ["astro", "learning in public", "setbacks", "community"]
+    url: '/predator/src/images/screnshot.png'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+tags: ["webdev"] 
 ---
-It wasn't always smooth sailing, but I'm enjoying building with Astro. And, the [Discord community](https://astro.build/chat) is really friendly and helpful!
+最近要幫我之前的教授作圖，他說要給我薪水，所以要有一個公司號，才能開發票。目前還在等國稅局的消息。
+
+反正以後要接案，需要把名聲打起來，所以開始架網站。我有用純 html css javascript 架網站的經驗。[連結:我幫實驗室架在Github的網站](https://sinicasoftlab.github.io/)。這次想嘗試用框架套件，看會不會比較方便。我決定開始學最近越來越知名的 Astro，看看能不能使用 Three JS 來展示我的 3D 作品。

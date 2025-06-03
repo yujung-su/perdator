@@ -3,7 +3,7 @@ document.querySelector('.borders1').addEventListener('mouseenter', () => {
   document.querySelector('.mv1-1').classList.toggle('move1-1');
   document.querySelector('.mv1-2').classList.toggle('move1-2');
   document.querySelector('.mv1-3').classList.toggle('move1-3');
-  // document.querySelector('.mv1-4').classList.toggle('move1-4');
+  document.querySelector('.mv1-4').classList.toggle('move1-4');
 });
 document.querySelector('.borders12').addEventListener('mouseenter', () => {
   document.querySelector('.mv2-1').classList.toggle('move2-1');
@@ -34,7 +34,7 @@ document.querySelector('.borders1').addEventListener('mouseleave', () => {
   document.querySelector('.mv1-1').classList.remove('move1-1');
   document.querySelector('.mv1-2').classList.remove('move1-2');
   document.querySelector('.mv1-3').classList.remove('move1-3');
-  // document.querySelector('.mv1-4').classList.remove('move1-4');
+  document.querySelector('.mv1-4').classList.remove('move1-4');
 });
 document.querySelector('.borders12').addEventListener('mouseleave', () => {
   document.querySelector('.mv2-1').classList.remove('move2-1');

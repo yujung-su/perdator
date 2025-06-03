@@ -4,6 +4,8 @@
   "exclude": ["dist"],
   "compilerOptions": {
     "baseUrl": ".",
+  "strictNullChecks": true, // add if using `base` template
+  "allowJs": true, // required, and included with all Astro templates
   "noImplicitAny": false,
     "paths": {
       "@components/*": ["src/components/*"],
@@ -13,7 +15,8 @@
       "@images/*": ["src/images/*"],
       "@scripts/*": ["src/scripts/*"],
       "@assets/*": ["src/assets/*"],
-      "@assets2/*": ["./src/assets/*"]
+      "@assets2/*": ["./src/assets/*"],
+      "@videos/*": ["./src/videos/*"]
     }
   }
 }

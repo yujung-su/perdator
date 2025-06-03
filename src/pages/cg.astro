@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "CG & VFX";
 import Whitebox from '@components/whitebox.astro';
+import Whiteboxvideo from '@components/whitebox-video.astro';
 import Textbox from '@components/Textbox.astro';
 import { Image } from 'astro:assets';
 import mushroom from 'src/images/mushroomstatic3-small.png';
@@ -13,23 +14,92 @@ import fractal from 'src/images/highres.png';
 import blackhole from 'src/images/bh2.png';
 import vtuberr from 'src/images/girl2-beforesplit.png';
 import anime1 from 'src/images/2023-26-3.png';
+
+
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <Textbox t1={'電腦合成影像'} t2={'I am a beginner VFX artist and concept artist. I also do simple animations like product animations in TV and youtube. I make simple VFX effects for games and movies.I am using Blender and Hudini. There are still a lot to learn! But I am having fun!'}/>
+  <Textbox t1={'CG & 特效'} t2={'I am a beginner VFX artist and concept artist. I also do simple animations like product animations in TV and youtube. I make simple VFX effects for games and movies.I am using Blender and Hudini. There are still a lot to learn! But I am having fun!'}/>
 	
 	<Whitebox imagePath="/src/images/watch4-scene1bright.0016.png" t1={'產品廣告圖 / 動畫'
 }/>
-	<Whitebox imagePath="/src/images/mushroomstatic3-small.png" t1={'遊戲場景設計'
+	<Whitebox imagePath="/src/images/landscape-render3-cut.png" t1={'場景設計、3D建模'
 }/>
-	<Whitebox imagePath="/src/images/landscape-render3-cut.png" t1={'3D建模'
+	<Whitebox imagePath="/src/images/render22.png" t1={'室內設計渲染'
 }/>
-	<Whitebox imagePath="/src/images/render3.png" t1={'3D角色設計(初學者level)'
+	<Whiteboxvideo videoPath="/src/videos/web-fire.mp4" t1={'VFX特效 - 火焰'
 }/>
-	<Whitebox imagePath="/src/images/mushroomstatic3-small.png" t1={'Music Visualizer 音樂視覺效果'
+	<Whiteboxvideo videoPath="/src/videos/web-wwater2.mp4" t1={'VFX特效 - 海水'
 }/>
+	<Whiteboxvideo videoPath="/src/videos/web-rbd.mp4" t1={'VFX特效 - rigid body fracture'
+}/>
+	<Whiteboxvideo videoPath="/src/videos/web-chibi.mp4" t1={'3D角色設計(初學者level)'
+}/>
+	<Whiteboxvideo videoPath="/src/videos/web-visualizer1.mp4" t1={'Music Visualizer 音樂視覺效果'
+}/>
+	<Whitebox imagePath="/src/images/protein-render6-3.png" t1={'科研雜誌設計、商品期刊DM圖'}/>
+
+<!-- overflow-hidden rounded-xl shadow-2xl max-w-lg md:max-w-2xl mt-6 mb-8 bg-white/10 backdrop-blur-sm -->
 <div class="inline-block">
-  <h1>作品集</h1>
+<h1>技術</h1>
+<div class="overflow-hidden rounded-xl shadow-2xl max-w-lg md:max-w-2xl mt-6 mb-8 bg-white/10 backdrop-blur-sm">
+<table class="table-auto md:table-fixed border-collapse tracking-wide text-base/14 ">
+  <tr>
+    <th class="w-30"></th>
+    <th><img src="/predator/blender.svg" alt="ladvanced" class="size-[40px]" title="Blender"/>Blender</th>
+    <th><img src="/predator/Houdini3D.png" alt="ladvanced" class="size-[40px]" title="Houdini"/>Houdini </th>
+    <td class="text-xs md:block md:w-30 text-center pt-3">
+      <img src="/predator/check-rr.png" alt="icon" class="size-[20px] timg"/>no experience
+      <img src="/predator/check-y.png" alt="icon" class="size-[20px] timg"/>beginner
+      <img src="/predator/check-g.png" alt="icon" class="size-[20px] timg"/>intermediate
+      <img src="/predator/check-b.png" alt="icon" class="size-[20px] timg"/>advanced
+    </td>
+  </tr>
+  <tr>
+    <td class="text-center w-30">建模/UV材質</td>
+    <td class="text-center w-30">
+      <img src="/predator/check-g.png" alt="icon" class="size-[20px] timg"/>
+    </td>
+    <td class="text-center w-30">
+      <img src="/predator/check-y.png" alt="icon" class="size-[20px] timg"/>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="text-center w-30">動畫</td>
+    <td class="text-center w-30">
+      <img src="/predator/check-y.png" alt="icon" class="size-[20px] timg"/>
+    </td>
+    <td class="text-center w-30">
+      <img src="/predator/check-rr.png" alt="icon" class="size-[20px] timg"/>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="text-center">物理特效</td>
+    <td class="text-center w-30">
+      <img src="/predator/check-y.png" alt="icon" class="size-[20px] timg"/>
+    </td>
+    <td class="text-center w-30">
+      <img src="/predator/check-g.png" alt="icon" class="size-[20px] timg"/>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="text-center">後製comp</td>
+    <td class="text-center w-30">
+      <img src="/predator/check-y.png" alt="icon" class="size-[20px] timg"/>
+    </td>
+    <td class="text-center w-30">
+      <img src="/predator/check-rr.png" alt="icon" class="size-[20px] timg"/>
+    </td>
+    <td></td>
+  </tr>
+</table>
+</div>
+</div>
+<div class="inline-block">
+  <h1>其他作品</h1>
   <!-- <p>Here is my Youtube channel! Please subscribe!</p>
   <iframe width="640" height="427"
   src="https://www.youtube.com/embed/i8Lw7OafuKk">
@@ -44,6 +114,21 @@ import anime1 from 'src/images/2023-26-3.png';
     <Image class="rounded-lg mt-2 mb-2" src={blackhole} alt="A bird sitting on a nest of eggs." />
     <Image class="rounded-lg mt-2 mb-2" src={vtuberr} alt="A bird sitting on a nest of eggs." />
     <Image class="rounded-lg mt-2 mb-2" src={anime1} alt="A bird sitting on a nest of eggs." />
+    <video muted loop playsinline autoplay disableRemotePlayback class=" rounded-lg mt-2 mb-2" src="/src/videos/web-explosion.mp4" type="video/mp4"></video>
+    <video muted loop playsinline autoplay disableRemotePlayback class="rounded-lg mt-2 mb-2" src="/src/videos/web-khlinlab.mp4" type="video/mp4"></video>
+    <video muted loop playsinline autoplay disableRemotePlayback class=" rounded-lg mt-2 mb-2" src="/src/videos/web-abstract1.mp4" type="video/mp4"></video>
+    <video muted loop playsinline autoplay disableRemotePlayback class="rounded-lg mt-2 mb-2" src="/src/videos/web-visualizer2.mp4" type="video/mp4"></video>
+
+
+
   </div>
 </div>
 </BaseLayout>
+<style>
+.timg {
+  height: 100%;
+  /* max-width: 100%; */
+  aspect-ratio: 1 / 1;
+  overflow: auto;
+}
+</style>
