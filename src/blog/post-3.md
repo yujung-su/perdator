@@ -5,7 +5,7 @@ pubDate: 2025-04-15
 description: '架網站'
 author: '蘇昱融'
 image:
-    url: '/predator/src/images/screnshot.png'
+    url: '/predator/screenshot2.png'
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["webdev"] 
 ---

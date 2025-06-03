@@ -5,7 +5,7 @@ pubDate: 2025-06-04
 description: '找工作'
 author: '蘇昱融'
 image:
-    url: '/predator/src/images/render44.png'
+    url: '/predator/render44.png'
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["3d","life"]
 ---

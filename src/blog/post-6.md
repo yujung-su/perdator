@@ -5,7 +5,7 @@ pubDate: 2025-06-01
 description: '學 Substance Painter'
 author: '蘇昱融'
 image:
-    url: '/predator/src/images/rocket-static.png'
+    url: '/predator/rocket-static.png'
     alt: 'video'
 tags: ["3d"] 
 ---

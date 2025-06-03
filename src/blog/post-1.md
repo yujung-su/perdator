@@ -5,7 +5,7 @@ pubDate: 2024-12-18
 description: '新的人生 - 新的開始'
 author: '蘇昱融'
 image:
-    url: '/predator/src/images/me.png'
+    url: '/predator/me.png'
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["life"]
 ---
