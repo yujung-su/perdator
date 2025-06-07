@@ -8,6 +8,7 @@ image:
     url: '/predator/me.png'
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["life"]
+draft: false
 ---
 
 ## 重大決定

@@ -8,6 +8,7 @@ image:
     url: '/predator/rocket-static.png'
     alt: 'video'
 tags: ["3d"] 
+draft: false
 ---
 我第一次用 Adobe Substance 3d Painter，覺得上材質恨快很方便，反正多了一個工具。不然我平常對 Adobe 的產品很抗拒。但是有一些東西實在是沒有替代品。
 

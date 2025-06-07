@@ -7,17 +7,8 @@ import BlogPost from '@components/BlogPost.astro';
 
 const allPosts = await getCollection("blog");
 
-import { Image } from 'astro:assets';
-import mushroom from 'src/images/mushroomstatic3-small.png';
-import watch from 'src/images/watch4-scene1bright.0016.png';
-import cells1 from 'src/images/newlook.png';
-import patticle1 from 'src/images/smolesingle.png';
-import skull from 'src/images/render3.png';
-import fractal from 'src/images/highres.png';
-import blackhole from 'src/images/bh2.png';
-import vtuberr from 'src/images/girl2-beforesplit.png';
-import anime1 from 'src/images/2023-26-3.png';
-
+import{formatBlogPosts} from "@scripts/orderposts";
+const formattedPosts = formatBlogPosts(allPosts);
 ---
 
 
@@ -28,6 +19,8 @@ import anime1 from 'src/images/2023-26-3.png';
   <br/>
   <ul>
     <!-- {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)} -->
-         {allPosts.map((post) => (<BlogPost url={`/predator/posts/${post.id}/`} title={post.data.title} pubDate={post.data.pubDate}/>))}
+         <!-- {allPosts.map((post) => (<BlogPost url={`/predator/posts/${post.id}/`} title={post.data.title} pubDate={post.data.pubDate}/>))} -->
+    {formattedPosts.map((post) => (<BlogPost url={`/predator/posts/${post.id}/`} title={post.data.title} pubDate={post.data.pubDate}/>))}
+
   </ul>
 </BaseLayout>

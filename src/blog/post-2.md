@@ -8,7 +8,7 @@ image:
     url: '/predator/Houdini3D.png'
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["3d"]
-
+draft: true
 
 ---
 ## 用數學做藝術 - Houdini

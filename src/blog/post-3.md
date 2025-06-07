@@ -7,7 +7,8 @@ author: '蘇昱融'
 image:
     url: '/predator/screenshot2.png'
     alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["webdev"] 
+tags: ["webdev"]
+draft: false
 ---
 最近要幫我之前的教授作圖，他說要給我薪水，所以要有一個公司號，才能開發票。目前還在等國稅局的消息。
 
